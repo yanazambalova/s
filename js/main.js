@@ -5,8 +5,8 @@ $(function () {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    prevArrow: '<button type="button" class="testimonials-prev"><img src="../img/testimonials/arrow-left.png" alt="arrow"/></button>',
-    nextArrow: '<button type="button" class="testimonials-next"><img src="../img/testimonials/arrow-left.png" alt="arrow"/></button>',
+    prevArrow: '<button type="button" class="testimonials-prev"><img src="img/testimonials/arrow-left.png" alt="arrow"/></button>',
+    nextArrow: '<button type="button" class="testimonials-next"><img src="img/testimonials/arrow-left.png" alt="arrow"/></button>',
     responsive: [
       {
         breakpoint: 992,
