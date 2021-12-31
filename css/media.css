@@ -196,6 +196,14 @@
     }
 }
 @media (max-width: 768px){
+    .popup-additional{
+        align-items: center;
+    }
+    .popup-additional span {
+        display: block;
+        font-size: 16px;
+        opacity: 0.4;
+    }
     .contacts-container {
         display: flex;
         flex-direction: column;
@@ -284,6 +292,9 @@
     
 }
 @media (max-width: 596px){
+    .about-image img {
+        width: 90vw;
+    }
     .container{
         width: 92%;
     }
@@ -364,10 +375,10 @@
         height: 610px;
     }
     .top-nav__action{
-        right: -24px;
+        right: 0;
     }
     .top-nav__action img{
-        width: 80px;
+        width: 30px;
     }
     .services-number{
         display: none;
@@ -439,7 +450,19 @@
     
 }
 
+
 @media (max-width: 400px){
+    .popup-additional{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .popup-additional br{
+        display: none;
+    }
+    .popup-additional span {
+        font-size: 14px;
+        margin-top: 16px;
+    }
     .header{
         background-image: url('../img/main/background-gauss.jpg');
     }

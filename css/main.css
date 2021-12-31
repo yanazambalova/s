@@ -9,7 +9,6 @@ body, html{
     color: #0e0e0e;
     font-size: 24px;
     font-family: "Segoe UI", sans-serif;
-    overflow-x: hidden;
     background-color: #f8faff;
 }
 ul,li{
@@ -63,13 +62,13 @@ p{
     position: absolute;
     top: 50%;
     transform: translateY(-46%);
-    right: -40px;
-}
-.top-nav__action a{
+    right: 0;
+    filter: drop-shadow(0px 0px 20px #dd59be);
     transition: .25s ease all;
 }
-.top-nav__action a:hover{
-    opacity: 0.6;
+
+.top-nav__action:hover{
+    filter: drop-shadow(0px 0px 20px #dd59bec2);
 }
 
 
@@ -145,7 +144,8 @@ section{
 }
 
 .main-button {
-    background-color: #C839BA;
+    /* background-color: #C839BA; */
+    background-color: #dd59be;
     font-size: 20px;
     font-weight: 800;
     padding: 22px 50px;
@@ -156,7 +156,8 @@ section{
     display: inline-block;
     margin-top: 16px;
     margin-right: 20px;
-    box-shadow: 6px 0px 80px#C839BA;
+    box-shadow: 6px 0px 80px #dd59be;
+    /* box-shadow: 6px 0px 80px#C839BA; */
     transition: .25s ease all;
     position: relative;
     overflow: hidden;
@@ -181,7 +182,8 @@ section{
     display: none;
 }
 .main-button:hover {
-    box-shadow: 6px 0px 80px #c839bab9;
+    /* box-shadow: 6px 0px 80px #c839bab9; */
+    box-shadow: 6px 0px 80px #dd59bec7;
 }
 .main-button.empty-button{
     background-color: transparent;
@@ -191,8 +193,10 @@ section{
     padding-bottom: 24px;
 }
 .main-button.empty-button:hover {
-    border-color: #C839BA;
-    color: #C839BA;
+    /* border-color: #C839BA; */
+    /* color: #C839BA; */
+    color: #dd59be;
+    border-color: #dd59be;
 }
 .header  {
     position: relative;
@@ -242,7 +246,7 @@ section{
     font-weight: 400;
 }
 .about {
-    background-image: url('../img/about/background.png');
+    background-image: url('../img/about/yanna.png');
     background-position-y: bottom;
     background-repeat: no-repeat;
     /* #1C0032 */
@@ -251,7 +255,8 @@ section{
     padding-bottom: 0px;
 }
 .services{
-    background-color: #E836BF;
+    /* background-color: #E836BF; */
+    background-color: #dd59be;
     padding-top: 40px;
 }
 .services h2 {
@@ -330,9 +335,9 @@ section{
     border-radius: 10px;
     padding: 20px;
 }
-.popup-text::-webkit-scrollbar-thumb{
+/* .popup-text::-webkit-scrollbar-thumb{
     background-color: #E836BF;
-}
+} */
 .popup {
     visibility: hidden;
     opacity: 0;
@@ -553,7 +558,8 @@ section{
 }
 .need-item{
     flex: 1 400px;
-    box-shadow: 0 0 20px #ad3cb528;
+    /* box-shadow: 0 0 20px #ad3cb528; */
+    box-shadow: 0 0 20px #dd59be2c;
     border-radius: 10px;
     margin: 22px;
     padding: 50px;
@@ -721,4 +727,10 @@ section{
 .whyexactly .emodzi img{
     width: 22px;
     transform: translateY(5px);
+}
+span.footer-empty{
+    opacity: 0;
+}
+.popup-additional span {
+    display: none;
 }
