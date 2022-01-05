@@ -19,6 +19,7 @@
     }
 }
 @media (max-width: 992px){
+    
     .contacts-image img {
         width: 50vw;
     }
@@ -179,10 +180,14 @@
         max-width: 500px;
     }
     .testimonials-next{
-        right: -40px;
+        right: -6vw;
+        width: 20px;
+        height: 20px;
     }
     .testimonials-prev{
-        left: -40px;
+        left: -16w;
+        width: 20px;
+        height: 20px;
     }
     .testimonials .main-button{
         font-size: 16px;
@@ -193,6 +198,9 @@
     }
     .footer span{
         font-size: 18px;
+    }
+    section {
+        padding: 20px 0;
     }
 }
 @media (max-width: 768px){
@@ -291,7 +299,54 @@
     
     
 }
+
+
 @media (max-width: 596px){
+    .top-nav__action{
+        filter: none;
+    }
+    .top-nav__a
+    .services-content h3{
+        margin-top: 0;
+    }
+    .whyexactly p{
+        padding: 26px 0;
+    }
+    .contacts .h2{
+        margin-bottom: 40px;
+    }
+    .need-item{
+        margin: 22px 0;
+    }
+    .services h2{
+        margin-bottom: 40px;
+    }
+    .services-action .main-button {
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+    .services-item{
+        margin: 34px 0;
+    }
+    .slick-arrow{
+        background-color: #fff;
+        padding: 20px 20px;
+        border-radius: 15px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.377);
+    }
+    .slick-arrow img{
+        width: 10px;
+    }
+    .slick-dots{
+        bottom: 0;
+    }
+    .footer span{
+        font-size: 16px;
+    }
+    .testimonials-item{
+        margin: 0 5px;
+        margin-right: 56px;
+    }
     .about-image img {
         width: 90vw;
     }
@@ -447,6 +502,12 @@
         padding-bottom: 20px;
         font-size: 14px;
     }
+    .slick-arrow{
+        width: 60px;
+        height: 60px;
+        opacity: 1;
+        border-radius: 100px;
+    }
     
 }
 
@@ -465,5 +526,16 @@
     }
     .header{
         background-image: url('../img/main/background-gauss.jpg');
+    }
+}
+
+
+
+@media (max-height: 596px){
+    .main-arrow{
+        display: none;
+    }
+    .main h1{
+        margin-top: 6vh;
     }
 }

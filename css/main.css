@@ -597,10 +597,10 @@ section{
     overflow: hidden;
 }
 .slick-dots{
-    transform: translateY(16px);
+    transform: translateY(20px);
 }
 .slick-dots li button:before{
-    font-size: 50px;
+    font-size: 16px;
 }
 .services-action{
     margin-right: 0;
@@ -641,6 +641,8 @@ section{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    width: 100px;
+    height: 100px;
 
 }
 .slick-arrow:hover{
@@ -653,7 +655,7 @@ section{
 .testimonials-next{
     
     right: -90px;
-    transform: scaleX(-1);
+    transform: translateY(-50%) scaleX(-1);
 }
 .testimonials .main-button, .testimonials-container .main-button:hover{
     box-shadow: none;

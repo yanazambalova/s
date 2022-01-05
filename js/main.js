@@ -19,7 +19,8 @@ $(function () {
         breakpoint: 768,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToScroll: 1,
+          dots: false
         }
       }
       // You can unslick at a given breakpoint now by adding:
@@ -64,6 +65,13 @@ $(function () {
 
     //анимируем переход на расстояние - top за 1500 мс
     $('body,html').animate({ scrollTop: top }, 1000);
+  });
+
+  $('.menu, .menu-mobile').on("click", "a", function(event){
+    event.preventDefault();
+    hamburgerButton.classList.remove('is-active');
+    menuMobile.classList.remove('active');
+    topNav.classList.remove('active');
   });
 
 
