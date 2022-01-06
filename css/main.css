@@ -501,6 +501,11 @@ section{
     height: 220px;
     margin-bottom: 24px;
 }
+.need .main-button{
+    box-shadow: none;
+    margin-top: 54px;
+    display: inline-block;
+}
 
 .overflow {
     width: 100%;
