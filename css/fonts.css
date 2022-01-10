@@ -65,3 +65,14 @@
 	font-weight: normal;
 	font-style: italic;
 }
+
+
+
+
+/*Bebas Neue*/
+
+
+@font-face {
+	font-family: "Code-Pro-Black";
+	src: url("../fonts/Code-Pro-Black.ttf") 
+}

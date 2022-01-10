@@ -30,15 +30,9 @@ $(function () {
   });
 
   const
-    hamburgerButton = document.querySelector('.hamburger'),
-    topNav = document.querySelector('.top-nav'),
-    menuMobile = document.querySelector('.menu-mobile');
+    topNav = document.querySelector('.top-nav');
 
-  hamburgerButton.addEventListener('click', () => {
-    hamburgerButton.classList.toggle('is-active');
-    menuMobile.classList.toggle('active');
-    topNav.classList.toggle('active');
-  })
+
 
   $('.popup-close').on('click', function (e) {
     $('.popup-info').removeClass('is-active');
@@ -54,7 +48,7 @@ $(function () {
 
   }
 
-  $(".menu, .menu-mobile, .main-bottom, .main-about").on("click", "a", function (event) {
+  $(".main-about, .logo").on("click", "a", function (event) {
     //отменяем стандартную обработку нажатия по ссылке
     event.preventDefault();
     //забираем идентификатор бока с атрибута href
@@ -67,16 +61,9 @@ $(function () {
     $('body,html').animate({ scrollTop: top }, 1000);
   });
 
-  $('.menu, .menu-mobile').on("click", "a", function(event){
-    event.preventDefault();
-    hamburgerButton.classList.remove('is-active');
-    menuMobile.classList.remove('active');
-    topNav.classList.remove('active');
-  });
 
 
 });
-
 
 // prevArrow: '<button type="button" class="testimonials-prev"><img src="img/testimonials/arrow-left.svg" alt="arrow"/></button>',
 // nextArrow: '<button type="button" class="testimonials-next"><img src="img/testimonials/arrow-left.svg" alt="arrow"/></button>',
