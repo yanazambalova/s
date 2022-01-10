@@ -583,7 +583,9 @@
         right: 50%;
         transform: translate(50%,-50%);
     }
-    
+    .contacts{
+        padding-bottom: 20px;
+    }
 }
 
 
@@ -613,7 +615,7 @@
 
 
 
-@media (max-height: 596px){
+@media (max-height: 400px){
     .main-arrow{
         display: none;
     }
@@ -625,10 +627,8 @@
     }
     .header-offer{
         bottom: -60px;
-        opacity: 0.3;
     }
     .header-offer-mobile {
-        bottom: -200px;
-        opacity: 0.3;
+        bottom: -100px;
     }
 }
