@@ -48,6 +48,9 @@
     }
 }
 @media (max-width: 992px){
+    .header-bottom{
+        display: block;
+    }
     .contacts{
         margin-top: 20px;
     }
@@ -256,6 +259,13 @@
     }
 }
 @media (max-width: 768px){
+    .contacts-info{
+        max-width: 60vw;
+    }
+
+    .popup-info .main-button{
+        margin-right: 20px;
+    }
     .popup-additional{
         align-items: center;
     }
@@ -354,12 +364,44 @@
         padding-top: 0;
     }
     
-    
+    .popup-close{
+        width: 50px;
+        height: 50px;
+    }
+    .logo{
+        font-size: 14px;
+    }
 }
 
 
 @media (max-width: 596px){
+    .contacts{
+        background-position: right -60vw center;
+    }
+    .contacts-info{
+        max-width: 74vw;
+    }
 
+    .services .main-button.empty-button{
+        padding: 14px 34px;
+        padding-bottom: 18px;
+    }
+    .popup-info .popup-price{
+        font-size: 14px;
+    }
+    .popup-top .h3{
+        font-size: 18px;
+    }
+    .popup-info .main-button{
+        padding: 14px 28px;
+        font-size: 16px;
+        padding-bottom: 18px;
+    }
+    .popup-info .main-button:hover{
+        padding: 14px 28px;
+        padding-bottom: 18px;
+        font-size: 16px;
+    }
     .need .main-button{
         margin-top: 30px;
     }
@@ -444,7 +486,8 @@
         padding-left: 20px;
     }
     .testimonials .main-button{
-        padding: 14px 18px;
+        padding: 14px 22px;
+        padding-bottom: 18px;
         font-size: 14px;
     }
     .need-item{
@@ -590,8 +633,16 @@
 
 
 @media (max-width: 400px){
+    .slick-arrow{
+        width: 38px;
+        height: 38px;
+        top: 38px;
+    }
+    .testimonials-item{
+        margin: 0 1px;
+    }
     .main h1{
-        font-size: 30px;
+        font-size: 32px;
         margin-top: 6vh;
     }
     .header-offer-mobile{

@@ -231,11 +231,11 @@ section{
 .header  {
     position: relative;
 }
-.main-arrow{
+.header-bottom{
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 40px;
+    bottom: 0px;
     cursor: pointer;
     transition: .25s ease all;
     width: 150px;
@@ -244,17 +244,29 @@ section{
     justify-content: center;
     align-items: center;
     animation: levitation 2.4s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-arrow{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 
 @keyframes levitation {
     0%{ 
-        bottom: 40px;
+        bottom: 0px;
+        opacity: 0.6;
     }
     50%{
-        bottom: 60px;
+        bottom: 20px;
+        opacity: 1;
     }
     100%{
-        bottom: 40px;
+        bottom: 0px;
+        opacity: 0.6;
     }
 }
 .main-arrow:hover {
@@ -331,8 +343,8 @@ section{
 .services-number{
     min-width: 58px;
     height: 58px;
-    /* background-color: #2786df; */
-    background-color: rgb(100, 80, 255);
+    background-color: #2786df;
+    /* background-color: rgb(100, 80, 255); */
     margin: 0 67px;
     border-radius: 10px;
     color: #fff;
@@ -468,8 +480,6 @@ section{
     line-height: 1.5;
 }
 .popup-price {
-    background-color: #fa5f5f;
-    color: #fff;
     border-radius: 6px;
     padding: 2px 7px;
 }
@@ -523,9 +533,19 @@ section{
 }
 .popup-info .popup-price {
     margin-left: 20px;
-    
+    font-weight: 600;
     padding: 6px 10px;
-    background-color: #64c98b;
+    background-color: #8e4bd4;
+    color: #ebd9ff;
+}
+.popup-text h4{
+    color: rgb(34, 34, 34);
+}
+.header-bottom{
+    display: none;
+}
+.popup-info p{
+    color: #626262;
 }
 .popup-info .popup-picture {
     display: block;
