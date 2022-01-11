@@ -48,7 +48,7 @@ $(function () {
 
   }
 
-  $(".main-about, .logo").on("click", "a", function (event) {
+  $(".main-about, .logo, .header-bottom").on("click", "a", function (event) {
     //отменяем стандартную обработку нажатия по ссылке
     event.preventDefault();
     //забираем идентификатор бока с атрибута href
